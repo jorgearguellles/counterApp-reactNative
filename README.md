@@ -1,4 +1,10 @@
-/* eslint-disable react-native/no-inline-styles */
+# Counter App - React Native
+
+# Different ways to styled components
+
+## 1. Inline style
+
+```js
 import React from 'react';
 import {Text, View} from 'react-native';
 
@@ -22,3 +28,13 @@ const App = () => {
 };
 
 export default App;
+```
+
+<details >
+<summary>Check result in iOS & Android</summary>
+
+![View](./screenshots/1.png)
+
+</details>
+
+## 2.
