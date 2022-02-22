@@ -1,6 +1,38 @@
 # Counter App - React Native
 
-# Create a React native App with TypeScript command line
+This project is a Counter App and you can do:
+
+- Add one
+- Subtract one
+- See realtime counter
+
+## Makers
+
+- Developed by Jorge Arias Argüelles [GitHub](https://github.com/jorgearguellles) &
+  [LinkedIn](https://www.linkedin.com/in/jorgeariasarguelles/)
+- React Native: Aplicaciones nativas para IOS y Android course by Fernando Herrera [GitHub](https://github.com/Klerith) & [Udemy](https://globant.udemy.com/course/react-native-fh/)
+
+## Development Technologies
+
+Made with :green_heart: using:
+
+- [React Native](https://reactnative.dev/docs/style)
+
+## Screenshot App
+
+![App Screenshot](./src/screenshots/2.png)
+
+## Feedback
+
+Open to: [@JorgeAriasArgüelles](https://www.linkedin.com/in/jorgeariasarguelles/)
+
+<br />
+<br />
+<br />
+<br />
+<hr />
+
+## Create a React native App with TypeScript command line
 
 - `npx react-native init NameTSProject --template react-native-template-typescript`
 
