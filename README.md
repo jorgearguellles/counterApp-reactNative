@@ -1,6 +1,10 @@
 # Counter App - React Native
 
-# Different ways to styled components
+# Create a React native App with TypeScript command line
+
+- `npx react-native init NameTSProject --template react-native-template-typescript`
+
+# Different ways to style components
 
 ## 1. Inline style
 
@@ -33,8 +37,10 @@ export default App;
 <details >
 <summary>Check result in iOS & Android</summary>
 
-![View](./screenshots/1.png)
+![View](./src/screenshots/1.png)
 
 </details>
 
 ## 2.
+
+#
