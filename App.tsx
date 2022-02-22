@@ -1,24 +1,6 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Text, View} from 'react-native';
+import {CounterScreen} from './src/screens/CounterScreen';
 
-const App = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: 'green',
-        justifyContent: 'center',
-      }}>
-      <Text
-        style={{
-          fontSize: 50,
-          textAlign: 'center',
-        }}>
-        Hello Sexy
-      </Text>
-    </View>
-  );
+export const App = () => {
+  return <CounterScreen />;
 };
-
-export default App;
