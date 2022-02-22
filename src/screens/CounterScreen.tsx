@@ -1,39 +1,65 @@
-/* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 export const CounterScreen = () => {
   const [counter, setCounter] = useState(0);
-  const handleCounter = ( num:number ) => {
-    setCounter( counter + num);
-  }
+
+  const handleCounter = (num: number) => {
+    setCounter(counter + num);
+  };
+
   return (
-    <View
-      style={{
-        flex: 1, // Means encompass all view that Dad container allows us
-        backgroundColor: 'yellow',
-        justifyContent: 'center',
-      }}>
-      <Text
-        style={{
-          textAlign: 'center',
-          fontSize: 40,
-          top: -150,
-        }}>
-        Counter: {counter}
-      </Text>
-      <Button
-        onPress={() => handleCounter(1)}
-        title="Add +1"
-        color="#841584"
-        accessibilityLabel="Add button"
-      />
-      <Button
-        onPress={() => handleCounter(-1)}
-        title="Subtract -1"
-        color="#841584"
-        accessibilityLabel=" Subtract button"
-      />
+    <View style={styles.container}>
+      <Text style={styles.title}> Counter: {counter} </Text>
+      <TouchableOpacity
+        style={styles.fabLocationR}
+        onPress={() => handleCounter(1)}>
+        <View style={styles.fab}>
+          <Text style={styles.fabText}>+1</Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.fabLocationL}
+        onPress={() => handleCounter(-1)}>
+        <View style={styles.fab}>
+          <Text style={styles.fabText}>-1</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, // Means encompass all view that Dad container allows us
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 40,
+    top: -150,
+    textAlign: 'center',
+  },
+  fabLocationR: {
+    position: 'absolute',
+    bottom: 70,
+    right: 40,
+  },
+  fabLocationL: {
+    position: 'absolute',
+    bottom: 70,
+    left: 40,
+  },
+  fab: {
+    backgroundColor: '#5856D6',
+    borderRadius: 50,
+    width: 60,
+    height: 60,
+    justifyContent: 'center',
+  },
+  fabText: {
+    color: 'white',
+    fontSize: 30,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+  },
+});
