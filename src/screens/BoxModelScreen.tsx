@@ -6,6 +6,9 @@ export const BoxModelScreen = () => {
     <SafeAreaView style={styles.containerScreen}>
       <View style={styles.containerText}>
         <Text style={styles.title}>Box Model Screen</Text>
+        <Text style={styles.title}>Box Model Screen</Text>
+        <Text style={styles.title}>Box Model Screen</Text>
+        <Text style={styles.title}>Box Model Screen</Text>
       </View>
     </SafeAreaView>
   );
