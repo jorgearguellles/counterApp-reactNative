@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-import {ChallengeScreen} from './src/screens/ChallengeScreen';
+import {CounterScreen} from './src/screens/CounterScreen';
 
 export const App = () => {
   return (
@@ -10,7 +10,7 @@ export const App = () => {
         flex: 1,
         backgroundColor: 'white',
       }}>
-      <ChallengeScreen />
+      <CounterScreen />
     </SafeAreaView>
   );
 };
